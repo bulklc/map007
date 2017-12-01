@@ -51,7 +51,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:11
-        }).fitBounds([[12.8446770655,77.3350689464],[13.1486959345,77.693737733]]);
+        }).fitBounds([[12.8368699344,77.4788120069],[13.1408888034,77.8374807935]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         L.control.locate().addTo(map);
@@ -256,6 +256,34 @@
                 fillColor: 'rgba(0,0,0,1.0)',
             };
                 }
+                else if (DrinkingWaterSources1rule8_eval_expression(context)) {
+                  return {
+                pane: 'pane_DrinkingWaterSources1',
+                radius: 6.0,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fillOpacity: 1,
+                fillColor: 'rgba(94,9,155,1.0)',
+            };
+                }
+                else if (DrinkingWaterSources1rule9_eval_expression(context)) {
+                  return {
+                pane: 'pane_DrinkingWaterSources1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fillOpacity: 1,
+                fillColor: 'rgba(94,9,155,1.0)',
+            };
+                }
             else {
                 return {fill: false, stroke: false};
             }
@@ -278,7 +306,7 @@
         bounds_group.addLayer(layer_DrinkingWaterSources1);
         map.addLayer(layer_DrinkingWaterSources1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_OutofOrder7.png" /></td><td>Out of Order</td></tr></table>': layer_DrinkingWaterSources1,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad0,}).addTo(map);
+        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMsoutoforder7.png" /></td><td>Water ATMs (out of order)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfromsource8.png" /></td><td>Other (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfrompersonalcontainer9.png" /></td><td>Other (sampled from personal container)</td></tr></table>': layer_DrinkingWaterSources1,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad0,}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer_DrinkingWaterSources1,
