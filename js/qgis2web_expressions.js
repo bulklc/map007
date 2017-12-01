@@ -813,3 +813,11 @@ function DrinkingWaterSources1rule6_eval_expression(context) {
     
     return ((feature.properties['Source']  == 'Borewell') && (feature.properties['Collection']  == 'From Household Container'));
 }
+
+function DrinkingWaterSources1rule7_eval_expression(context) {
+    // Source = 'Water ATM' AND Collection = 'Out of Order'
+
+    var feature = context.feature;
+    
+    return ((feature.properties['Source']  == 'Water ATM') && (feature.properties['Collection']  == 'Out of Order'));
+}
