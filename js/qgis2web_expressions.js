@@ -822,3 +822,21 @@ function DrinkingWaterSources1rule7_eval_expression(context) {
     
     return ((feature.properties['Source']  == 'Water ATM') && (feature.properties['Collection']  == 'Out of Order'));
 }
+
+
+function DrinkingWaterSources1rule8_eval_expression(context) {
+    // Source = 'Other' AND Collection = 'Direct From Source'
+
+    var feature = context.feature;
+    
+    return ((feature.properties['Source']  == 'Other') && (feature.properties['Collection']  == 'Direct From Source'));
+}
+
+
+function DrinkingWaterSources1rule9_eval_expression(context) {
+    // Source = 'Other' AND Collection = 'From Household Container'
+
+    var feature = context.feature;
+    
+    return ((feature.properties['Source']  == 'Other') && (feature.properties['Collection']  == 'From Household Container'));
+}
