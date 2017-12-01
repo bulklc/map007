@@ -135,7 +135,7 @@
                         <td colspan="2"><strong>CFU per mL</strong><br />' + (feature.properties['CFU per mL'] !== null ? Autolinker.link(String(feature.properties['CFU per mL'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>TDS in ppm</strong><br />' + (feature.properties['TDS'] !== null ? Autolinker.link(String(feature.properties['TDS'])) : '') + '</td>\
+                        <td colspan="2"><strong>TDS in ppm</strong><br />' + (feature.properties['TDS Count'] !== null ? Autolinker.link(String(feature.properties['TDS Count'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent);
