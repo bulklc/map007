@@ -829,7 +829,7 @@ function DrinkingWaterSources1rule8_eval_expression(context) {
 
     var feature = context.feature;
     
-    return ((feature.properties['Source']  != ('Water ATM' OR 'Borewell' OR 'Tap')) && (feature.properties['Collection']  == 'Direct From Source'));
+    return ((feature.properties['Source']  != ('Water ATM' | 'Borewell' | 'Tap')) && (feature.properties['Collection']  == 'Direct From Source'));
 }
 
 
@@ -838,5 +838,5 @@ function DrinkingWaterSources1rule9_eval_expression(context) {
 
     var feature = context.feature;
     
-    return ((feature.properties['Source']  != ('Water ATM' OR 'Borewell' OR 'Tap')) && (feature.properties['Collection']  == 'From Household Container'));
+    return ((feature.properties['Source']  != ('Water ATM' | 'Borewell' | 'Tap')) && (feature.properties['Collection']  == 'From Household Container'));
 }
