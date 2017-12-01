@@ -6,7 +6,7 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/leaflet-search.css">
         <style>
@@ -51,12 +51,12 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:11
-        }).fitBounds([[12.7994339616,77.3025719832],[13.2492896616,78.0920940095]]);
+        }).fitBounds([[12.8446770655,77.3350689464],[13.1486959345,77.693737733]]);
         var hash = new L.Hash(map);
-        map.attributionControl.addAttribution('<a href="http://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         L.control.locate().addTo(map);
         var bounds_group = new L.featureGroup([]);
-        var basemap0 = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        var basemap0 = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
@@ -114,7 +114,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>Sample Number</strong><br />' + (feature.properties['Site No'] !== null ? Autolinker.link(String(feature.properties['Site No'])) : '') + '</td>\
+                        <td colspan="2"><strong>Site No</strong><br />' + (feature.properties['Site No'] !== null ? Autolinker.link(String(feature.properties['Site No'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Location</strong><br />' + (feature.properties['Location'] !== null ? Autolinker.link(String(feature.properties['Location'])) : '') + '</td>\
@@ -132,10 +132,7 @@
                         <td colspan="2"><strong>Result</strong><br />' + (feature.properties['Result'] !== null ? Autolinker.link(String(feature.properties['Result'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Coliform CFU per mL</strong><br />' + (feature.properties['CFU per mL'] !== null ? Autolinker.link(String(feature.properties['CFU per mL'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2"><strong>TDS Count</strong><br />' + (feature.properties['TDS Count'] !== null ? Autolinker.link(String(feature.properties['TDS Count'])) : '') + '</td>\
+                        <td colspan="2"><strong>CFU per mL</strong><br />' + (feature.properties['CFU per mL'] !== null ? Autolinker.link(String(feature.properties['CFU per mL'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent);
@@ -244,7 +241,7 @@
                 fillOpacity: 1,
                 fillColor: 'rgba(255,127,0,1.0)',
             };
-                     }
+                }
                 else if (DrinkingWaterSources1rule7_eval_expression(context)) {
                   return {
                 pane: 'pane_DrinkingWaterSources1',
@@ -281,7 +278,7 @@
         bounds_group.addLayer(layer_DrinkingWaterSources1);
         map.addLayer(layer_DrinkingWaterSources1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr></table>': layer_DrinkingWaterSources1,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad0,}).addTo(map);
+        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_OutofOrder7.png" /></td><td>Out of Order</td></tr></table>': layer_DrinkingWaterSources1,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad0,}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer_DrinkingWaterSources1,
