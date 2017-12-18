@@ -752,7 +752,7 @@ function fnc_project_color(values, context) {
 
 
 
-function DrinkingWaterSources1rule0_eval_expression(context) {
+function DrinkingWaterSources2rule0_eval_expression(context) {
     // Result = 'Test Pending'
 
     var feature = context.feature;
@@ -761,7 +761,7 @@ function DrinkingWaterSources1rule0_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule1_eval_expression(context) {
+function DrinkingWaterSources2rule1_eval_expression(context) {
     // Source = 'Water ATM' AND Collection = 'Direct From Source'
 
     var feature = context.feature;
@@ -770,7 +770,7 @@ function DrinkingWaterSources1rule1_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule2_eval_expression(context) {
+function DrinkingWaterSources2rule2_eval_expression(context) {
     // Source = 'Water ATM' AND Collection = 'From Household Container'
 
     var feature = context.feature;
@@ -779,7 +779,7 @@ function DrinkingWaterSources1rule2_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule3_eval_expression(context) {
+function DrinkingWaterSources2rule3_eval_expression(context) {
     // Source = 'Tap' AND Collection = 'Direct From Source'
 
     var feature = context.feature;
@@ -788,7 +788,7 @@ function DrinkingWaterSources1rule3_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule4_eval_expression(context) {
+function DrinkingWaterSources2rule4_eval_expression(context) {
     // Source = 'Tap' AND Collection = 'From Household Container'
 
     var feature = context.feature;
@@ -797,7 +797,7 @@ function DrinkingWaterSources1rule4_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule5_eval_expression(context) {
+function DrinkingWaterSources2rule5_eval_expression(context) {
     // Source = 'Borewell' AND Collection = 'Direct From Source'
 
     var feature = context.feature;
@@ -806,7 +806,7 @@ function DrinkingWaterSources1rule5_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule6_eval_expression(context) {
+function DrinkingWaterSources2rule6_eval_expression(context) {
     // Source = 'Borewell' AND Collection = 'From Household Container'
 
     var feature = context.feature;
@@ -814,8 +814,7 @@ function DrinkingWaterSources1rule6_eval_expression(context) {
     return ((feature.properties['Source']  == 'Borewell') && (feature.properties['Collection']  == 'From Household Container'));
 }
 
-
-function DrinkingWaterSources1rule7_eval_expression(context) {
+function DrinkingWaterSources2rule7_eval_expression(context) {
     // Source = 'Water ATM' AND Collection = 'Out of Order'
 
     var feature = context.feature;
@@ -823,8 +822,7 @@ function DrinkingWaterSources1rule7_eval_expression(context) {
     return ((feature.properties['Source']  == 'Water ATM') && (feature.properties['Collection']  == 'Out of Order'));
 }
 
-
-function DrinkingWaterSources1rule8_eval_expression(context) {
+function DrinkingWaterSources2rule8_eval_expression(context) {
     // Source = 'Other' AND Collection = 'Direct From Source'
 
     var feature = context.feature;
@@ -833,10 +831,11 @@ function DrinkingWaterSources1rule8_eval_expression(context) {
 }
 
 
-function DrinkingWaterSources1rule9_eval_expression(context) {
+function DrinkingWaterSources2rule9_eval_expression(context) {
     // Source = 'Other' AND Collection = 'From Household Container'
 
     var feature = context.feature;
     
     return ((feature.properties['Source']  != ('Water ATM' | 'Borewell' | 'Tap')) && (feature.properties['Collection']  == 'From Household Container'));
 }
+
