@@ -753,11 +753,11 @@ function fnc_project_color(values, context) {
 
 
 function DrinkingWaterSources2rule0_eval_expression(context) {
-    // Result = 'Test Pending'
+    // Result = 'test pending'
 
     var feature = context.feature;
     
-    return (feature.properties['Result']  == 'Test Pending');
+    return ((feature.properties['Source'] == 'Water ATM') && (feature.properties['Result']  == 'test pending'));
 }
 
 
@@ -837,5 +837,13 @@ function DrinkingWaterSources2rule9_eval_expression(context) {
     var feature = context.feature;
     
     return ((feature.properties['Source']  != ('Water ATM' | 'Borewell' | 'Tap')) && (feature.properties['Collection']  == 'From Household Container'));
+}
+
+function DrinkingWaterSources2rule10_eval_expression(context) {
+    // Source = 'Planned Community Visit'
+
+    var feature = context.feature;
+    
+    return (feature.properties['Source']  == ('Planned Community Visit'));
 }
 
