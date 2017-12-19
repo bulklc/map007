@@ -227,10 +227,10 @@
             });
              var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>Sample Number</strong><br />' + (feature.properties['Site No'] !== null ? Autolinker.link(String(feature.properties['Site No'])) : '') + '</td>\
+                        <td colspan="2"><strong>Site/Sample Number</strong><br />' + (feature.properties['Site No'] !== null ? Autolinker.link(String(feature.properties['Site No'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Location</strong><br />' + (feature.properties['Location'] !== null ? Autolinker.link(String(feature.properties['Location'])) : '') + '</td>\
+                        <td colspan="2"><strong>Location on Google Maps</strong><br />' + (feature.properties['Location'] !== null ? Autolinker.link(String(feature.properties['Location'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Source</strong><br />' + (feature.properties['Source'] !== null ? Autolinker.link(String(feature.properties['Source'])) : '') + '</td>\
@@ -239,7 +239,7 @@
                         <td colspan="2"><strong>Company</strong><br />' + (feature.properties['Company'] !== null ? Autolinker.link(String(feature.properties['Company'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Collection</strong><br />' + (feature.properties['Collection'] !== null ? Autolinker.link(String(feature.properties['Collection'])) : '') + '</td>\
+                        <td colspan="2"><strong>Collection Method</strong><br />' + (feature.properties['Collection'] !== null ? Autolinker.link(String(feature.properties['Collection'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Result</strong><br />' + (feature.properties['Result'] !== null ? Autolinker.link(String(feature.properties['Result'])) : '') + '</td>\
@@ -398,6 +398,20 @@
                 fillOpacity: 1,
                 fillColor: 'rgba(94,9,155,1.0)',
             };
+  }
+                else if (DrinkingWaterSources2rule10_eval_expression(context)) {
+                  return {
+                pane: 'pane_DrinkingWaterSources2',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fillOpacity: 1,
+                fillColor: 'rgba(155,155,155,1.0)',
+            };
                 }
             else {
                 return {fill: false, stroke: false};
@@ -432,3 +446,4 @@
         </script>
     </body>
 </html>
+
