@@ -246,7 +246,7 @@ var json_DrinkingWaterSources2 = {"type":"FeatureCollection","name":"DrinkingWat
 	//sample 114.02 pending
 {"type":"Feature","properties":{"Site No":"114.02","Location":"<a href=\"https:\/\/www.google.com\/maps?q=12.979092,77.677593(My+Point)&z=14&ll=12.979092,77.677593\" target=\"_blank\">map link<\/a>","Source":"Bottled Water","Company":"Unknown","Collection":"From Household Container","Result":"<a href=\"https://bulklc.github.io/map007/114-02_btl_container_01.jpg\" target=\"_blank\"><img src=\"https://bulklc.github.io/map007/114-02_btl_container_02.jpg\"><\/a>","CFU per mL":"10","TDS Count":"960"},"geometry":{"type":"Point","coordinates":[77.677593,12.979092]}},//
 	//sample 115.01 pending
-{"type":"Feature","properties":{"Site No":"115.01","Location":"<a href=\"https:\/\/www.google.com\/maps?q=12.924945,77.617633(My+Point)&z=14&ll=12.924945,77.617633\" target=\"_blank\">map link<\/a>","Source":"Water ATM","Company":"Dr Water","Collection":"pending","Result":"test pending","CFU per mL":"pending","TDS Count":"pending"},"geometry":{"type":"Point","coordinates":[77.617633,12.924945]}},//
+{"type":"Feature","properties":{"Site No":"115.01","Location":"<a href=\"https:\/\/www.google.com\/maps?q=12.924945,77.617633(My+Point)&z=14&ll=12.924945,77.617633\" target=\"_blank\">map link<\/a>","Source":"Water ATM","Company":"Dr Water","Collection":"From Household Container","Result":"<a href=\"https://bulklc.github.io/map007/115-01_atm_container_01.jpg\" target=\"_blank\"><img src=\"https://bulklc.github.io/map007/115-01_atm_container_02.jpg\"><\/a>","CFU per mL":"10","TDS Count":"87"},"geometry":{"type":"Point","coordinates":[77.617633,12.924945]}},//
 	//sample 116.01 pending
 {"type":"Feature","properties":{"Site No":"116.01","Location":"<a href=\"https:\/\/www.google.com\/maps?q=13.00568119,77.6303923(My+Point)&z=14&ll=13.00568119,77.6303923\" target=\"_blank\">map link<\/a>","Source":"Water ATM","Company":"Unknown","Collection":"pending","Result":"test pending","CFU per mL":"pending","TDS Count":"pending"},"geometry":{"type":"Point","coordinates":[77.6303923,13.00568119]}},//
 	//sample 117.01 pending
@@ -323,3 +323,8 @@ var json_DrinkingWaterSources2 = {"type":"FeatureCollection","name":"DrinkingWat
 {"type":"Feature","properties":{"Site No":"151.01","Location":"<a href=\"https:\/\/www.google.com\/maps?q=13.012521, 77.603750(My+Point)&z=14&ll=13.012521, 77.603750\" target=\"_blank\">map link<\/a>","Source":"Water ATM","Company":"Dr Water","Collection":"Direct From Source","Result":"<a href=\"https://bulklc.github.io/map007/151-01_atm_direct_01.jpg\" target=\"_blank\"><img src=\"https://bulklc.github.io/map007/151-01_atm_direct_02.jpg\"><\/a>","CFU per mL":"0","TDS Count":"23"},"geometry":{"type":"Point","coordinates":[77.603750,13.012521]}},
 	//sample 152.01 complete
 {"type":"Feature","properties":{"Site No":"152.01","Location":"<a href=\"https:\/\/www.google.com\/maps?q=13.000097, 77.608992(My+Point)&z=14&ll=13.000097, 77.608992\" target=\"_blank\">map link<\/a>","Source":"Water ATM","Company":"Dr Water","Collection":"Direct From Source","Result":"<a href=\"https://bulklc.github.io/map007/152-01_atm_direct_01.jpg\" target=\"_blank\"><img src=\"https://bulklc.github.io/map007/152-01_atm_direct_02.jpg\"><\/a>","CFU per mL":"0","TDS Count":"32"},"geometry":{"type":"Point","coordinates":[77.608992,13.000097]}}]}
+
+
+
+
+ 
