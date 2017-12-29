@@ -42,6 +42,7 @@
         var highlightLayer;
         function highlightFeature(e) {
             highlightLayer = e.target;
+
             if (e.target.feature.geometry.type === 'LineString') {
               highlightLayer.setStyle({
                 color: '#ffff00',
@@ -86,11 +87,11 @@
                         <td>' + (feature.properties['Ward Number'] !== null ? Autolinker.link(String(feature.properties['Ward Number'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Percentage Needing Treatment:</th>\
+                        <th scope="row">Treatment Need:</th>\
                         <td>' + (feature.properties['Percentage Undrinkable'] !== null ? Autolinker.link(String(feature.properties['Percentage Undrinkable'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Percentage Low Income:</th>\
+                        <th scope="row">Low Income:</th>\
                         <td>' + (feature.properties['Percentage Low Income'] !== null ? Autolinker.link(String(feature.properties['Percentage Low Income'])) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -100,6 +101,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_WardFocus0_0(feature) {
             if (feature.properties['Ward Focus (out of 5)'] >= 0.000000 && feature.properties['Ward Focus (out of 5)'] <= 1.000000 ) {
                 return {
@@ -194,6 +196,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_OuterRingRoad1_0() {
             return {
                 pane: 'pane_OuterRingRoad1',
@@ -253,6 +256,7 @@
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent);}
+
         function style_DrinkingWaterSources2_0(feature) {
             var context = {
                 feature: feature,
@@ -432,6 +436,7 @@
                 return L.circleMarker(latlng, style_DrinkingWaterSources2_0(feature));
             },
         });
+
         bounds_group.addLayer(layer_DrinkingWaterSources2);
         map.addLayer(layer_DrinkingWaterSources2);
     function pop_NammaMetroGreenLine2(feature, layer) {
@@ -450,6 +455,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_NammaMetroGreenLine2_0() {
             return {
                 pane: 'pane_NammaMetroGreenLine2',
@@ -489,6 +495,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_NammaMetroPurpleLine3_0() {
             return {
                 pane: 'pane_NammaMetroPurpleLine3',
@@ -528,6 +535,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_NammaMetroGreenStations4_0() {
             return {
                 pane: 'pane_NammaMetroGreenStations4',
@@ -575,6 +583,7 @@
                 </table>';
             layer.bindPopup(popupContent);
         }
+
         function style_NammaMetroPurpleStations5_0() {
             return {
                 pane: 'pane_NammaMetroPurpleStations5',
@@ -617,4 +626,3 @@
         </script>
     </body>
 </html>
-
