@@ -31,8 +31,8 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-search.js"></script>
-        <script src="data/OuterRingRoad0.js"></script>
-        <script src="data/DrinkingWaterSources1.js"></script>
+        <script src="data/OuterRingRoad1.js"></script>
+        <script src="data/DrinkingWaterSources2.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -63,7 +63,7 @@
         basemap0.addTo(map);
         function setBounds() {
         }
-        function pop_OuterRingRoad0(feature, layer) {
+        function pop_OuterRingRoad1(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -80,9 +80,9 @@
             layer.bindPopup(popupContent);
         }
 
-        function style_OuterRingRoad0_0() {
+        function style_OuterRingRoad1_0() {
             return {
-                pane: 'pane_OuterRingRoad0',
+                pane: 'pane_OuterRingRoad1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -92,18 +92,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OuterRingRoad0');
-        map.getPane('pane_OuterRingRoad0').style.zIndex = 400;
-        map.getPane('pane_OuterRingRoad0').style['mix-blend-mode'] = 'normal';
-    var layer_OuterRingRoad0 = new L.geoJson(json_OuterRingRoad0, {
+        map.createPane('pane_OuterRingRoad1');
+        map.getPane('pane_OuterRingRoad1').style.zIndex = 400;
+        map.getPane('pane_OuterRingRoad1').style['mix-blend-mode'] = 'normal';
+    var layer_OuterRingRoad1 = new L.geoJson(json_OuterRingRoad1, {
         attribution: '<a href=""></a>',
-        pane: 'pane_OuterRingRoad0',
-        onEachFeature: pop_OuterRingRoad0,
-        style: style_OuterRingRoad0_0,
+        pane: 'pane_OuterRingRoad1',
+        onEachFeature: pop_OuterRingRoad1,
+        style: style_OuterRingRoad1_0,
     });
-        bounds_group.addLayer(layer_OuterRingRoad0);
-        map.addLayer(layer_OuterRingRoad0);
-        function pop_DrinkingWaterSources1(feature, layer) {
+        bounds_group.addLayer(layer_OuterRingRoad1);
+        map.addLayer(layer_OuterRingRoad1);
+        function pop_DrinkingWaterSources2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -141,15 +141,15 @@
             layer.bindPopup(popupContent);
         }
 
-        function style_DrinkingWaterSources1_0(feature) {
+        function style_DrinkingWaterSources2_0(feature) {
             var context = {
                 feature: feature,
                 variables: {}
             };
             // Start of if blocks and style check logic
-            if (DrinkingWaterSources1rule0_eval_expression(context)) {
+            if (DrinkingWaterSources2rule0_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -161,9 +161,9 @@
                 fillColor: 'rgba(155,16,9,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule1_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule1_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -175,9 +175,9 @@
                 fillColor: 'rgba(9,130,155,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule2_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule2_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -189,9 +189,9 @@
                 fillColor: 'rgba(9,130,155,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule3_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule3_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -203,9 +203,9 @@
                 fillColor: 'rgba(51,160,44,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule4_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule4_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -217,9 +217,9 @@
                 fillColor: 'rgba(51,160,44,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule5_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule5_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -231,9 +231,9 @@
                 fillColor: 'rgba(255,127,0,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule6_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule6_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -245,9 +245,9 @@
                 fillColor: 'rgba(255,127,0,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule7_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule7_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -259,9 +259,9 @@
                 fillColor: 'rgba(0,0,0,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule8_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule8_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -273,9 +273,9 @@
                 fillColor: 'rgba(94,9,155,1.0)',
             };
                 }
-                else if (DrinkingWaterSources1rule9_eval_expression(context)) {
+                else if (DrinkingWaterSources2rule9_eval_expression(context)) {
                   return {
-                pane: 'pane_DrinkingWaterSources1',
+                pane: 'pane_DrinkingWaterSources2',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -291,28 +291,28 @@
                 return {fill: false, stroke: false};
             }
         }
-        map.createPane('pane_DrinkingWaterSources1');
-        map.getPane('pane_DrinkingWaterSources1').style.zIndex = 401;
-        map.getPane('pane_DrinkingWaterSources1').style['mix-blend-mode'] = 'normal';
-        var layer_DrinkingWaterSources1 = new L.geoJson(json_DrinkingWaterSources1, {
+        map.createPane('pane_DrinkingWaterSources2');
+        map.getPane('pane_DrinkingWaterSources2').style.zIndex = 401;
+        map.getPane('pane_DrinkingWaterSources2').style['mix-blend-mode'] = 'normal';
+        var layer_DrinkingWaterSources2 = new L.geoJson(json_DrinkingWaterSources2, {
             attribution: '<a href=""></a>',
-            pane: 'pane_DrinkingWaterSources1',
-            onEachFeature: pop_DrinkingWaterSources1,
+            pane: 'pane_DrinkingWaterSources2',
+            onEachFeature: pop_DrinkingWaterSources2,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_DrinkingWaterSources1_0(feature));
+                return L.circleMarker(latlng, style_DrinkingWaterSources2_0(feature));
             },
         });
-        bounds_group.addLayer(layer_DrinkingWaterSources1);
-        map.addLayer(layer_DrinkingWaterSources1);
+        bounds_group.addLayer(layer_DrinkingWaterSources2);
+        map.addLayer(layer_DrinkingWaterSources2);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMsoutoforder7.png" /></td><td>Water ATMs (out of order)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfromsource8.png" /></td><td>Other (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfrompersonalcontainer9.png" /></td><td>Other (sampled from personal container)</td></tr></table>': layer_DrinkingWaterSources1,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad0,}).addTo(map);
+        L.control.layers(baseMaps,{'Drinking Water Sources<br /><table><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_UntestedWaterATMs0.png" /></td><td>Untested Water ATMs</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfromsource1.png" /></td><td>Water ATMs (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMssampledfrompersonalcontainer2.png" /></td><td>Water ATMs (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_WaterATMsoutoforder7.png" /></td><td>Water ATMs (out of order)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfromsource3.png" /></td><td>Taps (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Tapssampledfrompersonalcontainer4.png" /></td><td>Taps (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfromsource5.png" /></td><td>Borewells (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Borewellssampledfrompersonalcontainer6.png" /></td><td>Borewells (sampled from personal container)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfromsource8.png" /></td><td>Other (sampled from source)</td></tr><tr><td style="text-align: center;"><img src="legend/DrinkingWaterSources1_Othersampledfrompersonalcontainer9.png" /></td><td>Other (sampled from personal container)</td></tr></table>': layer_DrinkingWaterSources2,'<img src="legend/OuterRingRoad0.png" /> Outer Ring Road': layer_OuterRingRoad1,}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
-            layer: layer_DrinkingWaterSources1,
+            layer: layer_DrinkingWaterSources2,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'Site No'}));
